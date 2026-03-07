@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sein Group – La energía a tu alcance</title>
+  <meta name="description" content="Sein Group ofrece soluciones energéticas integrales para empresas, instaladores y usuarios finales en Las Palmas de Gran Canaria." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__logo">
+        <span class="logo-sein">SEIN</span><span class="logo-group">GROUP</span>
+      </a>
+
+      <button class="navbar__toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navbar__menu" id="navMenu">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+          <li class="has-dropdown">
+            <a href="#servicios">Servicios <svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#servicios">Asesoramiento Energético</a></li>
+              <li><a href="#servicios">Asesoramiento Legal</a></li>
+              <li><a href="#servicios">Asesoramiento Financiero y de Seguros</a></li>
+              <li><a href="#servicios">Gestión de Proyectos Energéticos</a></li>
+              <li><a href="#servicios">Gestión de Comunidades de Propietarios</a></li>
+            </ul>
+          </li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__subtitle">Bienvenidos a Sein Group</p>
+      <h1 class="hero__title">La energía a tu alcance</h1>
+      <p class="hero__text">Soluciones energéticas integrales para empresas, instaladores y usuarios finales.</p>
+      <a href="#contacto" class="btn btn--primary">Contacta con nosotros</a>
+    </div>
+    <div class="hero__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="about" id="sobre-nosotros">
+    <div class="container about__inner">
+      <div class="about__text">
+        <span class="section-tag">Sobre Nosotros</span>
+        <h2>Soluciones energéticas <span class="highlight">integrales</span></h2>
+        <p>En Sein Group somos especialistas en ofrecer soluciones energéticas completas para empresas, instaladores y usuarios finales. Nuestra misión es acompañar a nuestros clientes en cada paso del proceso energético, desde la asesoría inicial hasta la gestión total del proyecto.</p>
+        <p>Nos guiamos por valores de innovación, sostenibilidad, compromiso medioambiental, transparencia en el trato y excelencia en el trabajo.</p>
+        <a href="#servicios" class="btn btn--secondary">Nuestros servicios</a>
+      </div>
+      <div class="about__values">
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#00BAAA" stroke-width="2"/>
+              <path d="M24 12v12l8 4" stroke="#00BAAA" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Innovación</h3>
+          <p>Apostamos por las últimas tecnologías y métodos del sector energético.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#00BAAA" stroke-width="2"/>
+              <path d="M24 14c0 0-10 6-10 14a10 10 0 0020 0c0-8-10-14-10-14z" stroke="#00BAAA" stroke-width="2.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Sostenibilidad</h3>
+          <p>Comprometidos con el medio ambiente y las energías renovables.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#00BAAA" stroke-width="2"/>
+              <path d="M16 24l6 6 10-12" stroke="#00BAAA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Transparencia</h3>
+          <p>Trato claro y honesto con cada uno de nuestros clientes.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#00BAAA" stroke-width="2"/>
+              <path d="M24 16l2.4 7.2H34l-6.2 4.6 2.4 7.2L24 30.4l-6.2 4.6 2.4-7.2L14 23.2h7.6L24 16z" stroke="#00BAAA" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Excelencia</h3>
+          <p>Calidad y dedicación en cada proyecto que emprendemos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Qué ofrecemos</span>
+        <h2>Nuestros <span class="highlight">Servicios</span></h2>
+        <p>Ofrecemos una amplia gama de servicios adaptados a las necesidades energéticas de empresas y particulares.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 8L8 28h8v28h16V40h8v16h8V28h8L32 8z" stroke="#F54F23" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M28 56V40h8v16" stroke="#F54F23" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Asesoramiento Energético</h3>
+          <p>Gestionamos todos los trámites previos ante la distribuidora eléctrica, agua y gas con un servicio completamente personalizado para cada cliente.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="12" y="8" width="40" height="48" rx="4" stroke="#F54F23" stroke-width="2.5"/>
+              <path d="M20 24h24M20 32h24M20 40h16" stroke="#F54F23" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Asesoramiento Legal</h3>
+          <p>Orientación jurídica y administrativa tanto para empresas como para particulares, cubriendo todos los aspectos legales relacionados con el sector energético.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="24" r="12" stroke="#F54F23" stroke-width="2.5"/>
+              <path d="M32 36v4M20 52c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#F54F23" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M29 24l2 2 4-4" stroke="#F54F23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Asesoramiento Financiero y de Seguros</h3>
+          <p>Asesoría financiera y de seguros personalizada, adaptada a las necesidades específicas de cada cliente para optimizar sus recursos.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="20" r="10" stroke="#F54F23" stroke-width="2.5"/>
+              <path d="M20 52V44a4 4 0 014-4h16a4 4 0 014 4v8" stroke="#F54F23" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M26 20l4 4 8-8" stroke="#F54F23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Gestión de Proyectos Energéticos y de Construcción</h3>
+          <p>Desarrollamos proyectos de energías renovables gestionando subvenciones y concursos públicos, desde la concepción hasta la ejecución completa.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 56V28L32 12l20 16v28H12z" stroke="#F54F23" stroke-width="2.5" stroke-linejoin="round"/>
+              <rect x="24" y="38" width="16" height="18" rx="2" stroke="#F54F23" stroke-width="2"/>
+              <path d="M20 28h8M36 28h8" stroke="#F54F23" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Gestión de Comunidades de Propietarios</h3>
+          <p>Administración integral de comunidades de propietarios, incluyendo asesoría, tesorería y todas las gestiones necesarias para su correcto funcionamiento.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANZA -->
+  <section class="trust">
+    <div class="container trust__inner">
+      <h2>¿Por qué confiar en nosotros?</h2>
+      <p>Somos un equipo comprometido con la excelencia, la sostenibilidad y la transparencia. Nuestros clientes nos eligen por nuestra capacidad de ofrecer soluciones integrales y personalizadas, siempre con rigor profesional y cercanía humana.</p>
+      <div class="trust__stats">
+        <div class="stat">
+          <span class="stat__number">+5</span>
+          <span class="stat__label">Años de experiencia</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">+200</span>
+          <span class="stat__label">Clientes satisfechos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">5</span>
+          <span class="stat__label">Áreas de servicio</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">100%</span>
+          <span class="stat__label">Compromiso</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="container contact__inner">
+      <div class="section-header section-header--left">
+        <span class="section-tag">Estamos aquí</span>
+        <h2>Contacta con <span class="highlight">nosotros</span></h2>
+        <p>No dudes en ponerte en contacto con nuestro equipo. Estamos disponibles de lunes a viernes para atenderte.</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z" stroke="#00BAAA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Teléfonos</h4>
+              <a href="tel:+34654500209">(+34) 654 500 209</a><br/>
+              <a href="tel:+34669027122">(+34) 669 027 122</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z" stroke="#00BAAA" stroke-width="1.8"/>
+                <path d="M22 6l-10 7L2 6" stroke="#00BAAA" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Correo electrónico</h4>
+              <a href="mailto:info@s2sein.com">info@s2sein.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="#00BAAA" stroke-width="1.8"/>
+                <circle cx="12" cy="9" r="2.5" stroke="#00BAAA" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Dirección</h4>
+              <p>C/ Avenida Rafael Cabrera 26, 5º Izquierda<br/>Las Palmas de Gran Canaria</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="#00BAAA" stroke-width="1.8"/>
+                <path d="M12 7v5l3 3" stroke="#00BAAA" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Horario</h4>
+              <p>Lunes – Viernes<br/>8:00 – 16:00</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" onsubmit="return false;">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#inicio" class="navbar__logo">
+            <span class="logo-sein">SEIN</span><span class="logo-group">GROUP</span>
+          </a>
+          <p>Soluciones energéticas integrales en Las Palmas de Gran Canaria.</p>
+          <img src="https://seingroup.es/cms/uploads/cofinanciado_por_kit_digital_5-1920-s8qy44.png" alt="Cofinanciado por Kit Digital - NextGenerationEU" class="footer__badge" onerror="this.style.display='none'" />
+        </div>
+        <div class="footer__links">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Asesoramiento Energético</a></li>
+            <li><a href="#servicios">Asesoramiento Legal</a></li>
+            <li><a href="#servicios">Asesoramiento Financiero</a></li>
+            <li><a href="#servicios">Gestión de Proyectos</a></li>
+            <li><a href="#servicios">Gestión de Comunidades</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="mailto:info@s2sein.com">info@s2sein.com</a></li>
+            <li><a href="tel:+34654500209">(+34) 654 500 209</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© Sein Group 2024. Todos los derechos reservados.</p>
+        <div class="footer__legal">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Aviso Legal</a>
+          <a href="#">Política de Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('navMenu').classList.toggle('open');
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          document.getElementById('navMenu').classList.remove('open');
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
