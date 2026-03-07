@@ -164,22 +164,20 @@ h4 {
 }
 
 .navbar__logo {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
 }
 
-.logo-sein {
-  color: var(--white);
-  transition: color var(--transition);
+.navbar__logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: filter var(--transition);
 }
 
-.logo-group {
-  color: var(--teal);
-}
-
-.navbar.scrolled .logo-sein {
-  color: var(--dark);
+.navbar.scrolled .navbar__logo-img {
+  filter: none;
 }
 
 .navbar__menu ul {
@@ -224,6 +222,16 @@ h4 {
   min-width: 280px;
   padding: 8px 0;
   flex-direction: column;
+}
+
+/* Bridge the 8px gap so moving mouse from link to dropdown keeps it open */
+.has-dropdown::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 8px;
 }
 
 .has-dropdown:hover .dropdown {
@@ -275,7 +283,7 @@ h4 {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--dark) 0%, #005a7a 60%, #007a90 100%);
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -283,9 +291,7 @@ h4 {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 60% 50% at 80% 30%, rgba(0,186,170,0.18) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(245,79,35,0.10) 0%, transparent 70%);
+  background: linear-gradient(135deg, rgba(0,54,75,0.88) 0%, rgba(0,54,75,0.72) 60%, rgba(0,90,122,0.60) 100%);
 }
 
 .hero__overlay { display: none; }
