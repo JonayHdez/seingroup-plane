@@ -643,7 +643,11 @@ h4 {
   background: var(--white);
   padding: 40px 0;
   border-top: 1px solid #e8eef4;
-  text-align: center;
+}
+
+.kit-digital-banner .container {
+  display: flex;
+  align-items: center;
 }
 
 .kit-digital-banner img {
