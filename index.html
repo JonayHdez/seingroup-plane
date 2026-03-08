@@ -67,7 +67,7 @@
         <h2>Soluciones energéticas <span class="highlight">integrales</span></h2>
         <p>En Sein Group somos especialistas en ofrecer soluciones energéticas completas para empresas, instaladores y usuarios finales. Nuestra misión es acompañar a nuestros clientes en cada paso del proceso energético, desde la asesoría inicial hasta la gestión total del proyecto.</p>
         <p>Nos guiamos por valores de innovación, sostenibilidad, compromiso medioambiental, transparencia en el trato y excelencia en el trabajo.</p>
-        <a href="#servicios" class="btn btn--secondary">Nuestros servicios</a>
+        <a href="sobre-nosotros/" class="btn btn--secondary">Conócenos</a>
       </div>
       <div class="about__values">
         <div class="value-card">
@@ -124,7 +124,7 @@
       </div>
       <div class="services__grid">
 
-        <div class="service-card">
+        <a href="asesoria-energetica/" class="service-card">
           <div class="service-card__icon">
             <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M32 8L8 28h8v28h16V40h8v16h8V28h8L32 8z" stroke="#F54F23" stroke-width="2.5" stroke-linejoin="round"/>
@@ -133,9 +133,9 @@
           </div>
           <h3>Asesoramiento Energético</h3>
           <p>Gestionamos todos los trámites previos ante la distribuidora eléctrica, agua y gas con un servicio completamente personalizado para cada cliente.</p>
-        </div>
+        </a>
 
-        <div class="service-card">
+        <a href="servicios/asesoramiento-legal/" class="service-card">
           <div class="service-card__icon">
             <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="12" y="8" width="40" height="48" rx="4" stroke="#F54F23" stroke-width="2.5"/>
@@ -144,9 +144,9 @@
           </div>
           <h3>Asesoramiento Legal</h3>
           <p>Orientación jurídica y administrativa tanto para empresas como para particulares, cubriendo todos los aspectos legales relacionados con el sector energético.</p>
-        </div>
+        </a>
 
-        <div class="service-card">
+        <a href="servicios/asesoramiento-financiero-y-de-seguros/" class="service-card">
           <div class="service-card__icon">
             <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="32" cy="24" r="12" stroke="#F54F23" stroke-width="2.5"/>
@@ -156,9 +156,9 @@
           </div>
           <h3>Asesoramiento Financiero y de Seguros</h3>
           <p>Asesoría financiera y de seguros personalizada, adaptada a las necesidades específicas de cada cliente para optimizar sus recursos.</p>
-        </div>
+        </a>
 
-        <div class="service-card">
+        <a href="servicios/gestion-de-proyectos-energeticos-y-de-construccion/" class="service-card">
           <div class="service-card__icon">
             <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="32" cy="20" r="10" stroke="#F54F23" stroke-width="2.5"/>
@@ -168,9 +168,9 @@
           </div>
           <h3>Gestión de Proyectos Energéticos y de Construcción</h3>
           <p>Desarrollamos proyectos de energías renovables gestionando subvenciones y concursos públicos, desde la concepción hasta la ejecución completa.</p>
-        </div>
+        </a>
 
-        <div class="service-card">
+        <a href="servicios/gestion-de-comunidades-de-propietarios/" class="service-card">
           <div class="service-card__icon">
             <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 56V28L32 12l20 16v28H12z" stroke="#F54F23" stroke-width="2.5" stroke-linejoin="round"/>
@@ -180,7 +180,7 @@
           </div>
           <h3>Gestión de Comunidades de Propietarios</h3>
           <p>Administración integral de comunidades de propietarios, incluyendo asesoría, tesorería y todas las gestiones necesarias para su correcto funcionamiento.</p>
-        </div>
+        </a>
 
       </div>
     </div>
@@ -274,13 +274,12 @@
 
         <form class="contact__form" action="https://formspree.io/f/XXXXXXXX" method="POST">
           <!-- Reemplaza XXXXXXXX con tu endpoint de Formspree -->
-          <input type="hidden" name="_subject" value="Nuevo contacto desde seingroup.es" />
           <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">Email *</label>
             <input type="email" id="email" name="email" placeholder="tu@email.com" required />
           </div>
           <div class="form-group">
@@ -288,10 +287,22 @@
             <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" />
           </div>
           <div class="form-group">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio" style="width:100%;padding:12px 16px;border:1.5px solid #dde3eb;border-radius:8px;font-family:inherit;font-size:15px;color:var(--text);background:var(--white);outline:none;">
+              <option value="">Selecciona un servicio...</option>
+              <option value="energetico">Asesoramiento Energético</option>
+              <option value="legal">Asesoramiento Legal</option>
+              <option value="financiero">Asesoramiento Financiero y de Seguros</option>
+              <option value="proyectos">Gestión de Proyectos Energéticos</option>
+              <option value="comunidades">Gestión de Comunidades de Propietarios</option>
+              <option value="otro">Otro</option>
+            </select>
           </div>
-          <div class="contact-checkboxes" style="margin-top:8px;">
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          </div>
+          <div class="contact-checkboxes">
             <label class="form-check">
               <input type="checkbox" name="newsletter" />
               Acepto el envío de newsletters e información comercial.
@@ -302,10 +313,16 @@
             </label>
           </div>
           <button type="submit" class="btn btn--primary btn--full" style="margin-top:20px;">Enviar mensaje</button>
+          <p style="font-size:12px;color:var(--text-light);margin-top:12px;text-align:center;">* Campos obligatorios</p>
         </form>
       </div>
     </div>
   </section>
+
+  <!-- KIT DIGITAL -->
+  <div class="kit-digital-banner">
+    <img src="images/kit-digital.png" alt="Cofinanciado por Kit Digital - NextGenerationEU" />
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -316,7 +333,6 @@
             <img src="images/logo.png" alt="Sein Group" class="navbar__logo-img" />
           </a>
           <p>Soluciones energéticas integrales en Las Palmas de Gran Canaria.</p>
-          <img src="images/kit-digital.png" alt="Cofinanciado por Kit Digital - NextGenerationEU" class="footer__badge" />
         </div>
         <div class="footer__links">
           <h4>Servicios</h4>

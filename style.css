@@ -206,7 +206,8 @@ h4 {
   color: var(--dark);
 }
 
-.navbar__menu ul li a:hover {
+.navbar__menu ul li a:hover,
+.navbar.scrolled .navbar__menu ul li a:hover {
   color: var(--orange);
 }
 
@@ -244,6 +245,8 @@ h4 {
   font-size: 14px;
   font-weight: 600;
   border-radius: 0;
+  white-space: nowrap;
+  text-align: left;
 }
 
 .has-dropdown .dropdown li a:hover {
@@ -416,6 +419,7 @@ h4 {
 }
 
 .service-card {
+  display: block;
   background: var(--white);
   border-radius: var(--radius);
   padding: 36px 28px;
@@ -423,6 +427,8 @@ h4 {
   transition: transform var(--transition), box-shadow var(--transition);
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
 }
 
 .service-card::after {
@@ -629,6 +635,21 @@ h4 {
 }
 
 .form-group textarea { resize: vertical; }
+
+/* ===========================
+   Kit Digital banner
+=========================== */
+.kit-digital-banner {
+  background: var(--white);
+  padding: 40px 0;
+  border-top: 1px solid #e8eef4;
+  text-align: center;
+}
+
+.kit-digital-banner img {
+  max-width: 360px;
+  width: 100%;
+}
 
 /* ===========================
    Footer
